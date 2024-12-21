@@ -1,0 +1,4 @@
+PS D:\Learning\Technology\Coding\Python\IyvanImports> git config --global credential.helper store
+PS D:\Learning\Technology\Coding\Python\IyvanImports> git remote set-url origin git@github.com:fluxstreamlearninghub/IyvanImports.git
+PS D:\Learning\Technology\Coding\Python\IyvanImports> git config user.name "clyton"
+PS D:\Learning\Technology\Coding\Python\IyvanImports> git config user.email "fluxstreamlearninghub@gmail.com"

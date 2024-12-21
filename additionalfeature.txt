@@ -1,0 +1,27 @@
+#Branching
+git branch MyFirstBranch or git checkout -b/--branch MyFirstBranch
+git branch
+git branch --all
+git branch -d/--delete <branch name>
+git checkout MyFirstBranch
+git switch MyFirstBranch
+git switch -
+git switch -c <branchname>
+git push origin MyFirstBranch
+git add branch1.txt
+git status
+git commit -m "Code is being committed for the first time"
+git tag -a v.1.0 -m	"1st release"
+git status
+git checkout master
+
+#Merging (Non-linear sequence of commit)
+git checkout master
+git merge MyFirstBranch
+git checkout MyFirstBranch
+git commit -a -m "committing the changes"
+git tag -a v.1.0 -m	"1st release"
+cat <filename>
+git checkout master
+git merge MySecondBranch
+cat <filename>
