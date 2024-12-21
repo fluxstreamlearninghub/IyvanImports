@@ -1,0 +1,100 @@
+Download
+https://git-scm.com/downloads
+
+$ git config 
+$ git config --global --list
+
+#initialize your local repository
+git --version
+git init 
+git status
+# Delete the .git as we need main not the master
+git init -b main
+git status
+
+
+#Authenticate yourself
+git config --global user.email "fluxstreamlearninghub@gmail.com"
+git config --global user.name "Clyton-Paul"
+git config --global --list
+
+
+
+GITHUB/GITLAB/GITBUCKET
+#add your remote repository as origin (from your local)
+git remote add origin "https://github.com/fluxstreamlearninghub/IyvanImports.git"
+git remote add origin https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/accenture
+
+#using ssh
+ssh-keygen -o
+git remote add origin <ssh url>
+
+#to check the non-added files into index yet
+git status
+git log
+git log --graph
+
+#to add the files into index (only for the first time)
+git add . (or) git add <filename> (or) git add -A
+git rm --cached <filename> # TO unstage
+
+#to commit the files from index to your GITHUB
+git commit -m "my first commit"
+git commit -a -m "code is beign commited for Demo purpose"
+git branch -M main
+git tag -a v.1.0 -m	"1st release"
+# -a is being used to commit without staging
+
+#To check the difference
+git diff
+git diff --staged
+
+#to analyze the log
+git log
+git log --pretty=oneline
+
+#Finally PUSH/PULL your codes from local repository to central repository
+ssh-keygen (Copy the phrase)
+Your public key has been saved in /c/Users/clyto/.ssh/id_rsa.pub
+setting -> SSH and GPG Keys -> add an entry
+ssh -T git@github.com  (authenticate yourself with the phrase)
+
+git remote -v
+git push origin main
+git push origin v.0.1.0
+
+#Tagginh
+- annotated
+- lightweight
+git tag -a v.1.0 -m	"1st release"
+git show v.1.0
+
+#Branching
+git branch MyFirstBranch or git checkout -b/--branch MyFirstBranch
+git branch
+git branch --all
+git branch -d/--delete <branch name>
+git checkout MyFirstBranch
+git switch MyFirstBranch
+git switch -
+git switch -c <branchname>
+git push origin MyFirstBranch
+git add branch1.txt
+git status
+git commit -m "Code is being committed for the first time"
+git tag -a v.1.0 -m	"1st release"
+git status
+git checkout master
+
+#Merging (Non-linear sequence of commit)
+git checkout master
+git merge MyFirstBranch
+git checkout MyFirstBranch
+git commit -a -m "committing the changes"
+git tag -a v.1.0 -m	"1st release"
+cat <filename>
+git checkout master
+git merge MySecondBranch
+cat <filename>
+
+# This file is being created for GIT commands reference
